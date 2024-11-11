@@ -80,3 +80,10 @@ if (typeof number === "number") {
 } else if (typeof number === "boolean") {
   console.log("Type is number", number); // ouput Type is number true
 }
+
+// =========  Function  =====================
+function greeting(user: string, id: number) {
+  console.log(`welcome ${user} to user no : ${id}`);
+}
+
+greeting("Noman", 1);
