@@ -22,10 +22,3 @@ function sumTwo(a: number, b: number): number {
 }
 
 console.log(sumTwo(5, 5));
-
-/// Create object
-let user: {
-  name: string;
-  age: number;
-  isAdult: boolean;
-};

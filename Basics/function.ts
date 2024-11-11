@@ -1,3 +1,23 @@
+// =========================   Understanding Optional and Default Parameters in TypeScript  ===================
+
+// Default Parameter
+const greet = (name: string, id: number = 1): string => {
+  return `welcome ${name} id No : ${id}`;
+};
+
+console.log(greet("Noman"));
+
+// Optional Parameter
+const greet1 = (name: string, id?: number): string => {
+  if (id) {
+    return `welcome ${name} id No : ${id}`;
+  } else {
+    return `Welcome ${name}`;
+  }
+};
+
+console.log(greet1("Noman")); // This will work now.
+
 // =========  Function  =====================
 function greeting(user: string, id: number) {
   console.log(`welcome ${user} your id is : ${id}`);
@@ -40,8 +60,6 @@ function calculateAvg(arr: number[]): number {
   let avg = sumArr / arr.length;
   return avg;
 }
-
-
 
 console.log(calculateAvg([25, 25])); // 2
 
